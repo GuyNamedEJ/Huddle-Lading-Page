@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --paleCyan: hsl(193, 100%, 96%);
+    --darkCyan: hsl(192, 100%, 9%);
+    --grayishBlue: hsl(208, 11%, 55%);
+}
+
+header {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: var(--paleCyan);
+    padding-bottom: 2rem;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    border: 3px solid black;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: var(--darkCyan);
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--darkCyan);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--darkCyan);
+    line-height: 1.6;
+    text-align: left;
+}
+
+/*Header Section*/
+.hero-container {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+nav button {
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--darkCyan);
+    background: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.content {
+    width: 50%;
+    margin-right: 4rem;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.content button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    background:var(--pink);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top:1rem;
+}
+
+/*Features Section*/
+#features{
+    margin-bottom:15rem;
+}
+.cards{
+    width:90%;
+    margin:auto;
+}
+.card{
+    border-radius: 25px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:2rem 5rem;
+    padding:3rem;
+}
+
+.card-content{
+    margin-right:6rem;
+}
+
+.card-content:nth-child(2)
+{
+    margin-left:6rem;
+}
+
+.card-content p{
+    color:var(--grayishBlue);
+}
+
+.card-img img{
+    width:100%;
+}
+
+/*Popout Section*/
+
+#popout{
+    position:absolute;
+    bottom:-90%;
+    left:35%;
+    background:white;
+    border-radius: 25px;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    margin:5rem auto;
+    padding:2rem;
+    z-index: 2;
+
+}
+#popout button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    background:var(--pink);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    position: relative;
+    background:var(--darkCyan);
+    color:white;
+ }
+
+footer .logo{
+    filter: brightness(0) invert(1);
+}
+
+footer p{
+    color:white;
+}
+
+.footer-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:1rem;
+}
+
+.contact-info{
+    padding:2rem;
+    /* background:lightcoral;
+    border:5px solid green; */
+    margin:5rem;
+    font-size:20px;
+}
+
+.contact{
+    display:flex;
+    align-items:center;
+    margin:2rem 0;
+}
+
+.contact img{
+    margin-right:1rem;
+}
+
+.links{
+    /* background:lightcoral;
+    border:3px solid green; */
+    margin:2rem;
+}
+
+.links ul{
+list-style:none;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.links ul li{
+margin-bottom:1.5rem;
+}
+
+.links a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Open Sans';
+}
+
+#copyright{
+    text-align:right;
+    padding:0 3rem 3rem 0;
+}
+
+.social ul{
+    display:flex;
+    list-style:none;
+    margin-bottom:6rem;
+    margin-left:5rem;
+}
+
+i{
+    border:1px solid white;
+    border-radius:50%;
+    padding:10px;
+    margin:.5rem;
+}
