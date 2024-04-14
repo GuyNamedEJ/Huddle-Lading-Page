@@ -80,10 +80,13 @@ main{
     width: 104px;
 }
 
-.hero__img{
-    width: 100%;
+.hero__img {
     margin-top: 56px;
     margin-bottom: 27px;
+}
+
+.hero__img img{
+    width: 100%;
 }
 
 .hero__content__container{
@@ -118,6 +121,9 @@ main{
 
 .features__card__img{
     order: 1;
+}
+
+.features__card__img img{
     width: 100%;
 }
 
@@ -224,4 +230,54 @@ footer{
 .copyright{
     text-align: center;
     font-size: 12px;
+}
+
+/*Tablet*/
+@media screen and (min-width:768px)  {
+
+    main{
+       padding: 0 45px; 
+    }
+
+    .hero__content__container {
+        margin-bottom: 36px;
+    }
+
+    .hero__heading{
+        font-size: 30px;
+        padding: 0;
+    }
+    
+   .hero__content__container{
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 54px;
+   }
+
+   .hero__img{
+    margin: 0;
+   }
+
+   .features__card{
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 84px;
+   }
+
+   .features__card:nth-of-type(odd) > .features__card__content{
+    order: 1;
+   }
+
+   .features > .text--body {
+    font-size: 16px;
+    line-height: 27px;
+   }
+
+   .popout > .text--heading{
+    font-size: 27px;
+   }
+
+
 }
